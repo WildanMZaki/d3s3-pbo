@@ -3,6 +3,7 @@ public class Circle extends Shape {
 
     public Circle() {
         super();
+        System.out.println("Circle() dipanggil");
         radius = 1.0;
     }
 

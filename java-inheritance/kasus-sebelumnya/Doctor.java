@@ -35,7 +35,6 @@ public class Doctor extends Person {
 
     @Override
     public String getProfile() {
-        // Memanfaatkan super.getProfile() secara bermakna (memenuhi kriteria Step 19 & T4-04)
         return "[DOKTER] " + super.getProfile() + " | Spesialisasi: " + specialization + " | No. SIP: " + sipNumber;
     }
 

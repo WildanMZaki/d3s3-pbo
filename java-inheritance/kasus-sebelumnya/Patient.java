@@ -34,7 +34,6 @@ public class Patient extends Person {
 
     @Override
     public String getProfile() {
-        // Memanfaatkan super.getProfile() secara bermakna (memenuhi kriteria Step 19 & T4-04)
         String keluhan = (symptom == null || symptom.isEmpty()) ? "Belum ada keluhan" : symptom;
         return "[PASIEN] " + super.getProfile() + " | No. RM: " + medicalRecordNumber + " | Keluhan: " + keluhan;
     }
