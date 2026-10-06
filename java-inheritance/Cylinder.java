@@ -9,6 +9,7 @@ public class Cylinder extends Circle {
     // Constructor with default radius, color but given height
     public Cylinder(double height) {
         super(); // call superclass no-arg constructor Circle()
+        System.out.println("Cylinder(h) dipanggil");
         this.height = height;
     }
 

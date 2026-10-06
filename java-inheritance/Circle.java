@@ -1,6 +1,5 @@
 public class Circle extends Shape {
     private double radius;
-    // private String color; // --> dipindah ke super class
 
     public Circle() {
         super();
@@ -12,9 +11,9 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    public Circle(double r, String c) { // dari Task 1: Ganti mekanisme karena color diteruskan ke super class
-        super(c, true); // menggunakan nilai default yang sama pada constructor super class
-        this.radius = r;
+    public Circle(double radius, String color) {
+        super(color, true);
+        this.radius = radius;
     }
 
     public Circle(double radius, String color, boolean filled) {
@@ -37,15 +36,6 @@ public class Circle extends Shape {
     public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
-
-    // /** getter and setter color */ --> Dipindah ke superclass Shape
-    // public String getColor() {
-    //      return color;
-    // }
-
-    // public void setColor(String color) {
-    //     this.color = color;
-    // }
 
     @Override
     public String toString() {
